@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Meridian Automations LLC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #1e40af; --primary-dark: #1e3a8a; --secondary: #3b82f6;
+            --accent: #60a5fa; --dark: #1f2937; --light: #f3f4f6; --white: #ffffff;
+            --text: #374151; --border: #e5e7eb;
+        }
+        body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.6; }
+        header { background: var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        nav { max-width: 1200px; margin: 0 auto; padding: 1.25rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Poppins', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: var(--text); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: var(--white); padding: 4rem 2rem; text-align: center; }
+        .hero h1 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
+        .hero p { font-size: 1.1rem; opacity: 0.95; }
+        .services-section { padding: 5rem 2rem; background: var(--white); }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .service-detail { margin-bottom: 4rem; padding: 3rem; background: var(--light); border-radius: 12px; }
+        .service-detail h2 { font-size: 2rem; font-weight: 700; color: var(--dark); margin-bottom: 1rem; }
+        .service-detail p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; }
+        .service-features { list-style: none; margin-top: 1.5rem; }
+        .service-features li { padding: 0.75rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 1rem; }
+        .service-features li:before { content: "✓"; color: var(--primary); font-weight: bold; font-size: 1.2rem; }
+        .service-features li:last-child { border-bottom: none; }
+        .cta-box { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: var(--white); padding: 3rem; border-radius: 12px; text-align: center; margin-top: 3rem; }
+        .cta-box h3 { font-size: 1.8rem; margin-bottom: 1rem; }
+        .cta-button { display: inline-block; background: var(--white); color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 1rem; transition: transform 0.3s; }
+        .cta-button:hover { transform: translateY(-2px); }
+        footer { background: var(--dark); color: var(--white); padding: 3rem 2rem 1.5rem; }
+        .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 2rem; }
+        .footer-section h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; }
+        .footer-section p, .footer-section a { color: rgba(255,255,255,0.8); text-decoration: none; display: block; margin-bottom: 0.5rem; }
+        .footer-section a:hover { color: var(--accent); }
+        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); }
+        @media (max-width: 768px) { .nav-links { display: none; } .hero h1 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MERIDIAN AUTOMATIONS</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Our Services</h1>
+        <p>Comprehensive automation solutions for modern businesses</p>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <div class="service-detail">
+                <h2>🤖 Business Automation</h2>
+                <p>Transform your operations with intelligent automation that handles repetitive tasks, reduces human error, and frees your team to focus on high-value work. Our business automation solutions are custom-built for your specific workflows and integrate seamlessly with your existing systems.</p>
+                <p>We analyze your current processes, identify automation opportunities, and implement solutions that deliver immediate productivity gains. From data entry to complex workflow orchestration, we handle it all.</p>
+                <ul class="service-features">
+                    <li>Workflow automation and process optimization</li>
+                    <li>Automated data entry and document processing</li>
+                    <li>Task scheduling and batch processing</li>
+                    <li>Report generation and distribution</li>
+                    <li>Email automation and response management</li>
+                    <li>File management and organization</li>
+                </ul>
+            </div>
+
+            <div class="service-detail">
+                <h2>📊 CRM Integration</h2>
+                <p>Connect your customer relationship management system with all your other business tools for seamless data flow, better insights, and improved customer experiences. We specialize in complex integrations that keep your data synchronized and your teams aligned.</p>
+                <p>Whether you're using GoHighLevel, HubSpot, Salesforce, or another CRM, we build robust integrations that eliminate manual data entry and ensure every team member has the information they need.</p>
+                <ul class="service-features">
+                    <li>Multi-system CRM integration and synchronization</li>
+                    <li>Automated lead capture and distribution</li>
+                    <li>Contact enrichment and data management</li>
+                    <li>Sales pipeline automation</li>
+                    <li>Custom reporting and analytics dashboards</li>
+                    <li>Third-party app integrations (calendars, email, payment processors)</li>
+                </ul>
+            </div>
+
+            <div class="service-detail">
+                <h2>💬 SMS Notifications</h2>
+                <p>Stay connected with your customers through timely, personalized SMS notifications. Our SMS solutions are fully compliant with A2P 10DLC regulations and designed to improve customer engagement, reduce no-shows, and streamline communication.</p>
+                <p>We handle everything from campaign registration to message automation, ensuring your SMS program is effective, compliant, and easy to manage.</p>
+                <ul class="service-features">
+                    <li>Automated appointment reminders and confirmations</li>
+                    <li>Service notifications and status updates</li>
+                    <li>Marketing campaigns and promotional messages</li>
+                    <li>Two-way SMS conversations and support</li>
+                    <li>A2P 10DLC compliance and campaign registration</li>
+                    <li>SMS analytics and performance tracking</li>
+                </ul>
+            </div>
+
+            <div class="service-detail">
+                <h2>⚙️ Custom Solutions</h2>
+                <p>Every business is unique, and sometimes off-the-shelf solutions don't cut it. We build custom automation and integration solutions tailored specifically to your business needs, processes, and goals.</p>
+                <p>Our custom solutions range from simple API integrations to complex multi-system workflows. We work closely with you to understand your requirements and deliver solutions that solve real business problems.</p>
+                <ul class="service-features">
+                    <li>Custom API development and integration</li>
+                    <li>Bespoke workflow design and implementation</li>
+                    <li>System architecture consulting</li>
+                    <li>Database design and optimization</li>
+                    <li>Legacy system modernization</li>
+                    <li>Ongoing support and maintenance</li>
+                </ul>
+            </div>
+
+            <div class="cta-box">
+                <h3>Ready to Automate Your Business?</h3>
+                <p>Let's discuss how our services can help you save time and scale efficiently</p>
+                <a href="contact.html" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Meridian Automations LLC</h3>
+                <p>4008 Presidio Dr<br>Norman, OK 73072<br>United States</p>
+                <p>EIN: 41-3249872</p>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="services.html">Business Automation</a>
+                <a href="services.html">CRM Integration</a>
+                <a href="services.html">SMS Notifications</a>
+                <a href="services.html">Custom Solutions</a>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <a href="index.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+            <div class="footer-section">
+                <h3>Get Started</h3>
+                <p>Ready to streamline your operations?</p>
+                <a href="contact.html">Request a Consultation</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Meridian Automations LLC. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
